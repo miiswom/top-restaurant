@@ -1,0 +1,1 @@
+export const aboutUsText = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod cupiditate deserunt quis ducimus asperiores mollitia dolore minus sit incidunt voluptatem officiis, maiores maxime! Explicabo est hic facilis tempore omnis debitis."
