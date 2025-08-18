@@ -1,3 +1,10 @@
 body {
   background: dodgerblue;
 }
+
+.menu-item-section {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
