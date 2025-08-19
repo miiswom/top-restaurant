@@ -17,7 +17,7 @@ import { aboutUsText } from "./asset/aboutUsText.js"
 const menuBtn = document.querySelector("#menu-btn")
 const menuTitle = document.createElement("h1");
 const menuDiv = document.createElement("div");
-
+import smallImg from "./asset/300x300.png"
 
 homeBtn.addEventListener("click", () => {
   displayHomePage()
@@ -56,8 +56,8 @@ function displayMenuPage() {
   menuTitle.textContent = "Our Menu";
 
   mainDiv.innerHTML = "";
+    mainDiv.appendChild(menuTitle);
   mainDiv.appendChild(menuDiv)
-  mainDiv.appendChild(menuTitle);
 
   displayItems()
 
@@ -73,7 +73,7 @@ function displayItems() {
     const menuItemPrice = document.createElement("span")
     
     menuItem.classList.add("menu-item-section")
-    menuItem.style.background = "white";
+    menuItem.style.backgroundImage = `url(${smallImg})`;
     menuItemTitle.textContent = "Food Item"
     menuItemPrice.textContent = "10 GBP"
     
