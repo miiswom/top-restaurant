@@ -1,12 +1,12 @@
 // the importer (where you IN/import the modules, there is only 1)
 
 import "./styles.css";
-import { menuGreeting } from "./menu.js";
 export const aboutUsBtn = document.createElement("button")
 export const mainDiv = document.querySelector("#content");
 import { homeBtn, homeTitle, loadAboutUsPage } from "./home.js";
 import {menuBtn, loadMenuPage} from "./menu.js";
 import { contactBtn, loadContactPage } from "./contact.js";
+
 
 homeBtn.addEventListener("click", () => {
   loadHomePage()

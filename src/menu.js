@@ -20,6 +20,7 @@ import { mainDiv  } from ".";
 
 function loadMenuPage() {
   menuTitle.textContent = "Our Menu";
+  menuDiv.classList.add("container")
 
   mainDiv.innerHTML = "";
   mainDiv.appendChild(menuTitle);

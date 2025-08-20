@@ -4,6 +4,7 @@
     <button id="about-us">About us</button>
 */
 // ********* HomePage ********* 
+const homeDiv = document.createElement("div")
 const homeBtn = document.querySelector("#home-btn");
 const homeTitle = document.createElement("h1");
 const aboutUsTitle = document.createElement("h1");
