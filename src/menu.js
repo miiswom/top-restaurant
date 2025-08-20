@@ -10,5 +10,41 @@
       </section>
     </div>
 */
-export const menuGreeting = "Hi, from menu!";
+
+// ********* MenuPage ********* 
+const menuBtn = document.querySelector("#menu-btn");
+const menuTitle = document.createElement("h1");
+const menuDiv = document.createElement("div");
+import smallImg from "./asset/300x300.png";
+import { mainDiv  } from ".";
+
+function loadMenuPage() {
+  menuTitle.textContent = "Our Menu";
+
+  mainDiv.innerHTML = "";
+  mainDiv.appendChild(menuTitle);
+  mainDiv.appendChild(menuDiv)
+
+  loadItems()
+};
+
+function loadItems() {
+
+
+  for (let i = 0; i < 10; i++) {
+    const menuItem = document.createElement("section");
+    const menuItemTitle = document.createElement("h3");
+    const menuItemPrice = document.createElement("span");
+
+    menuItem.classList.add("menu-item-section")
+    menuItem.style.backgroundImage = `url(${smallImg})`;
+    menuItemTitle.textContent = "Food Item"
+    menuItemPrice.textContent = "10 GBP"
+
+    menuDiv.appendChild(menuItem)
+    menuItem.appendChild(menuItemTitle)
+    menuItem.appendChild(menuItemPrice)
+  }
+};
+export {menuBtn, loadMenuPage, loadItems}
 
