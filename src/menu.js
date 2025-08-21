@@ -32,12 +32,13 @@ function loadMenuPage() {
 function loadItems() {
 
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 12; i++) {
     const menuItem = document.createElement("section");
     const menuItemTitle = document.createElement("h3");
     const menuItemPrice = document.createElement("span");
 
     menuItem.classList.add("menu-item-section")
+    menuDiv.classList.add("menu-div")
     menuItem.style.backgroundImage = `url(${smallImg})`;
     menuItemTitle.textContent = "Food Item"
     menuItemPrice.textContent = "10 GBP"

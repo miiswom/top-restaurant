@@ -4,21 +4,14 @@
     <button id="about-us">About us</button>
 */
 // ********* HomePage ********* 
-const homeDiv = document.createElement("div")
 const homeBtn = document.querySelector("#home-btn");
 const homeTitle = document.createElement("h1");
-const aboutUsTitle = document.createElement("h1");
-const aboutUsPara = document.createElement("p");
-import { aboutUsText } from "./asset/aboutUsText.js";
+const homeDiv = document.createElement("div")
+const homePara = document.createElement("p")
 
-function loadAboutUsPage() {
-  aboutUsTitle.textContent = "About Us"
-  aboutUsPara.textContent = aboutUsText
+import { homeParaText } from "./asset/homeParaText.js"
 
-  mainDiv.innerHTML = ""
-  mainDiv.appendChild(aboutUsTitle)
-  mainDiv.appendChild(aboutUsPara)
+homePara.textContent = homeParaText
 
-};
 
-export {homeBtn, homeTitle, loadAboutUsPage}
+export {homeBtn, homeTitle, homeDiv, homePara, homeParaText}

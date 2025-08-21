@@ -1,5 +1,26 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
 body {
-  background: dodgerblue;
+  margin: 0;
+  background: #bdbb74;
+  font-size: 1.3em;
 }
 
 h1 {
@@ -7,10 +28,17 @@ h1 {
 }
 
 .container {
-  max-width: 80%;
+  /* display: flex; */
+  max-width: 100%;
   margin: 0 auto;
-  background: white;
   padding: 40px 20px;
+  /* border: 1px solid red; */
+}
+
+.menu-div {
+  /* border: 1px solid lime; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
 }
 
 .menu-item-section {
@@ -18,17 +46,81 @@ h1 {
   width: 300px;
   height: 300px;
   border: 1px solid black;
-  margin-bottom: 10px;
+  margin: 0 auto;
 }
 
 .menu-item-section:not(:last-child) {
-  margin-right: 10px;
+  margin-bottom: 80px;
 }
+
 
 .google-maps-style {
   display: block-inline;
   margin: 0 auto;
   text-align: center;
-  width: 600px;
+  min-width: 80%;
+  max-width: 500px;
   height: 450px;
+}
+
+header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+
+.navbar {
+  display: flex;
+  gap: 10px;
+  margin-right: 40px;
+}
+
+.btn {
+  background: none;
+  border: none;
+  font-size: inherit;
+}
+
+.home-div,
+.contact-div {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid lime; */
+  min-width: 50%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.home-div p,
+.aboutus-div p,
+.contact-div p {
+  /* border: 1px solid blue; */
+  font-size: 1.3em;
+  line-height: 1.3em;
+}
+
+.home-div .btn {
+  /* color: red; */
+  /* border: 1px solid blue; */
+  width: 150px;
+  padding: 10px;
+  align-self: flex-end;
+}
+
+/* .contact-div {
+  display: flex;
+  max-width: 50%;
+  min-width: 600px;
+  margin: 0 auto;
+  border: 1px solid lime;
+  flex-direction: column;
+  text-align: center;
+} */
+
+.aboutus-div {
+  /* border: 1px solid lime; */
+  padding: 10px 40px;
+  margin: 0 auto;
 }
