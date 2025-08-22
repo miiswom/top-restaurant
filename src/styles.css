@@ -1,6 +1,8 @@
 /* Box Model Hack */
 * {
   box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* Clear fix hack */
@@ -38,8 +40,9 @@ a {
   text-decoration: none;
 }
 
-h1, h2 {
+h1, h2, h3 {
   text-align: center;
+  overflow: hidden;
 }
 
 .container {
@@ -100,7 +103,7 @@ header {
   margin: 0 auto;
   display: flex;
   /* flex-direction: row; */
-  width: 100%;
+  /* width: 100%; */
   justify-content: space-between;
   background: rgba(0, 0, 0, 0.8);
   /* border: 1px solid red; */
@@ -203,7 +206,7 @@ header {
 
 footer {
   position: relative;
-  bottom: -180px;
+  bottom: -20vh;
   display: flex;
   justify-content: center;
   background: rgba(0, 0, 0, 0.5);
