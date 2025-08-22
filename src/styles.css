@@ -19,8 +19,15 @@
 
 body {
   margin: 0;
-  background: #bdbb74;
+  background-color: rgba(0, 0, 0, 1);
+  background-image: url("./asset/ben-koorengevel-Vd0_Htlb-Kk-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
   font-size: 1.3em;
+  color: white;
 }
 
 h1 {
@@ -39,6 +46,9 @@ h1 {
   /* border: 1px solid lime; */
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  background: rgba(0, 0, 0, 0.5);
+
+
 }
 
 .menu-item-section {
@@ -47,6 +57,7 @@ h1 {
   height: 300px;
   border: 1px solid black;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .menu-item-section:not(:last-child) {
@@ -67,19 +78,22 @@ header {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
+  background: rgba(0, 0, 0, 0.8);
+  /* border: 1px solid red; */
 }
 
 .navbar {
   display: flex;
   gap: 10px;
   margin-right: 40px;
+
 }
 
 .btn {
   background: none;
   border: none;
   font-size: inherit;
+  color: white
 }
 
 .home-div,
@@ -91,6 +105,11 @@ header {
   max-width: 600px;
   margin: 0 auto;
   padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#content .home-div {
+  padding-bottom: 30vh;
 }
 
 .home-div p,
@@ -99,6 +118,7 @@ header {
   /* border: 1px solid blue; */
   font-size: 1.3em;
   line-height: 1.3em;
+
 }
 
 .home-div .btn {
@@ -123,4 +143,25 @@ header {
   /* border: 1px solid lime; */
   padding: 10px 40px;
   margin: 0 auto;
+}
+
+.logo {
+  width: 50px;
+}
+
+/* #content {
+  background-image: url("./asset/ben-koorengevel-Vd0_Htlb-Kk-unsplash.jpg");
+  background-size: cover no-repeat;
+  background-position: center center;
+  height: 100vh;
+  width: 100vw;
+      background-repeat: repeat;
+
+} */
+
+footer {
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
 }
