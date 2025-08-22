@@ -114,7 +114,7 @@ header {
 .navbar {
   /* display: flex; */
   /* width: 100%; */
-  gap: 10px;
+  gap: 6px;
   margin-right: 40px;
 
 }
@@ -224,7 +224,7 @@ header {
   /* border: 1px solid red; */
 }
 
-.logo-txt{
+.logo-txt {
   line-height: 1.3rem;
 }
 
@@ -245,9 +245,10 @@ footer {
     height: 100px;
   }
 }
+
 @media (max-width: 1000px) {
 
-.aboutus-div {
+  .aboutus-div {
     flex-direction: column;
   }
 
@@ -258,8 +259,7 @@ footer {
 }
 
 @media (max-width: 1300px) {
-
-.aboutus-div {
+  .aboutus-div {
     flex-direction: column;
   }
 
@@ -268,4 +268,3 @@ footer {
     max-width: 90%;
   }
 }
-
