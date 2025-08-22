@@ -7,20 +7,30 @@ export const aboutUsBtn = document.createElement("button")
 export const mainDiv = document.querySelector("#content");
 import { homeBtn, homeTitle, homeDiv, homePara } from "./home.js";
 import { loadAboutUsPage } from "./about.js";
-import {menuBtn, loadMenuPage} from "./menu.js";
+import { menuBtn, loadMenuPage } from "./menu.js";
 import { contactBtn, loadContactPage } from "./contact.js";
+const buttons = document.querySelectorAll("button");
+const isCurrent = document.querySelector(".current-btn")
+buttons.forEach(button => {
 
+  button.addEventListener("click", () => {
+      document.querySelector(".btn-current")?.classList.remove("btn-current");
+      button.classList.add("btn-current")
+  })
+})
 
-homeBtn.addEventListener("click", () => {
+homeBtn.addEventListener("click", (e) => {
   loadHomePage()
 });
 
 aboutUsBtn.classList.add("btn")
 aboutUsBtn.addEventListener("click", () => {
+
   loadAboutUsPage()
 });
 
-menuBtn.addEventListener("click", () => {
+menuBtn.addEventListener("click", (e) => {
+  isCurrentBtn(e.target)
   loadMenuPage()
 });
 
@@ -31,9 +41,9 @@ contactBtn.addEventListener("click", () => {
 loadHomePage();
 
 export function loadHomePage() {
-  homeTitle.textContent = "Welcome to Fratelli!";  
+  homeTitle.textContent = "Welcome to Fratelli!";
   homeDiv.classList.add("home-div")
-  aboutUsBtn.textContent = "About";
+  aboutUsBtn.textContent = "About ➜";
 
   mainDiv.innerHTML = ""
   mainDiv.appendChild(homeTitle)
@@ -42,6 +52,9 @@ export function loadHomePage() {
   homeDiv.appendChild(aboutUsBtn)
 };
 
+function isCurrentBtn(target) {
+  console.log(target)
+}
 /*
 Inside mainDiv
 1. hometitle
@@ -49,4 +62,4 @@ Inside mainDiv
 Inside homeDiv
 1. homePara
 2. aboutUs
-*/ 
+*/
