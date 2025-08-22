@@ -1,6 +1,8 @@
 // the importer (where you IN/import the modules, there is only 1)
 
+import "./reset.css";
 import "./styles.css";
+
 export const aboutUsBtn = document.createElement("button")
 export const mainDiv = document.querySelector("#content");
 import { homeBtn, homeTitle, homeDiv, homePara } from "./home.js";

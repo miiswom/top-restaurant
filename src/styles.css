@@ -28,6 +28,9 @@ body {
   height: 100vh;
   font-size: 1.2em;
   color: white;
+   /* display: flex;
+        flex-direction: column;
+        min-height: 100vh; */
 }
 
 a {
@@ -35,7 +38,7 @@ a {
   text-decoration: none;
 }
 
-h1 {
+h1, h2 {
   text-align: center;
 }
 
@@ -47,26 +50,40 @@ h1 {
   /* border: 1px solid red; */
 }
 
-.menu-div {
-  /* border: 1px solid lime; */
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
-  background: rgba(0, 0, 0, 0.5);
-
-
-}
-
 .menu-item-section {
   display: inline-block;
-  width: 300px;
-  height: 300px;
-  border: 1px solid black;
+  width: 150px;
+  height: 150px;
+  border: 1px solid white;
   margin: 0 auto;
-  padding: 0 20px;
+  /* padding: 0 20px; */
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  text-align: center;
 }
 
-.menu-item-section:not(:last-child) {
+.menu-item-section:hover {
+  opacity: 0.7;
+}
+
+/* .menu-item-section:not(:last-child) {
   margin-bottom: 80px;
+} */
+
+.menu-div {
+  /* border: 1px solid lime; */
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  padding: 20px 0;
+  gap: 1rem;
+}
+
+.meal-title {
+  padding: 20px 0;
+  border-bottom: 2px solid white;
 }
 
 
@@ -82,13 +99,16 @@ h1 {
 header {
   margin: 0 auto;
   display: flex;
+  /* flex-direction: row; */
+  width: 100%;
   justify-content: space-between;
   background: rgba(0, 0, 0, 0.8);
   /* border: 1px solid red; */
 }
 
 .navbar {
-  display: flex;
+  /* display: flex; */
+  /* width: 100%; */
   gap: 10px;
   margin-right: 40px;
 
@@ -99,6 +119,11 @@ header {
   border: none;
   font-size: inherit;
   color: white
+}
+
+.btn:hover {
+  text-decoration: underline;
+  font-size: 1.5rem;
 }
 
 .home-div,
@@ -148,7 +173,7 @@ header {
   /* border: 1px solid lime; */
   padding: 10px 40px;
   margin: 0 auto;
-    background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
 
 }
 
@@ -166,12 +191,30 @@ header {
 
 } */
 
+.meal-div {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+  /* border: 1px solid red; */
+}
+
+
 footer {
   position: relative;
-  bottom: -80px;
+  bottom: -180px;
   display: flex;
   justify-content: center;
   background: rgba(0, 0, 0, 0.5);
   padding: 40px;
   text-align: center;
+}
+
+@media (max-width: 750px) { 
+
+  .menu-item-section {
+  width: 100px;
+  height: 100px;
+  }
 }
