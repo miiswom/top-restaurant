@@ -22,7 +22,7 @@
 body {
   margin: 0;
   background-color: rgba(0, 0, 0, 1);
-  background-image: url("./asset/background.jpg");
+  background-image: url("./asset/imgs/background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

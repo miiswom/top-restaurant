@@ -4,8 +4,8 @@ const aboutUsDiv = document.createElement("div");
 const aboutUsTitle = document.createElement("h1");
 const aboutUsPara = document.createElement("p");
 const aboutUsImg = document.createElement("img")
-import {aboutUsText} from "./asset/aboutUsText";
-import chef from "./asset/chef.jpg"
+import {aboutUsText} from "./asset/texts/aboutUsText.js";
+import chef from "./asset/imgs/chef.jpg"
 
 export function loadAboutUsPage() {
   aboutUsTitle.textContent = "About Us";

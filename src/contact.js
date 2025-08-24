@@ -12,7 +12,7 @@
 
 // ********* ContactPage ********* 
 import { mainDiv  } from ".";
-import { homeParaText } from "./asset/homeParaText";
+import { homeParaText } from "./asset/texts/placeholderText";
 const contactBtn = document.querySelector("#contact-btn");
 const contactTitle = document.createElement("h1");
 const contactPara = document.createElement("p");

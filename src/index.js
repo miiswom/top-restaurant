@@ -5,8 +5,7 @@ import "./styles.css";
 
 export const mainDiv = document.querySelector("#content");
 export const buttons = document.querySelectorAll("button");
-import { homeBtn } from "./home.js";
-import { loadHomePage } from "./home.js";
+import { homeBtn, loadHomePage } from "./home.js";
 import { menuBtn, loadMenuPage } from "./menu.js";
 import { contactBtn, loadContactPage } from "./contact.js";
 import { styleActiveElement } from "./styleActiveElement.js";

@@ -1,5 +1,5 @@
 // ********* HomePage ********* 
-import { homeParaText } from "./asset/homeParaText.js";
+import { homeParaText } from "./asset/texts/placeholderText.js";
 import { mainDiv } from ".";
 import {loadAboutUsPage} from "./about.js"
 export const aboutUsBtn = document.createElement("button")
@@ -8,9 +8,7 @@ const homeTitle = document.createElement("h1");
 const homeDiv = document.createElement("div")
 const homePara = document.createElement("p")
 
-aboutUsBtn.classList.add("btn")
 aboutUsBtn.addEventListener("click", () => {
-
   loadAboutUsPage()
 });
 
@@ -19,6 +17,7 @@ export function loadHomePage() {
   homeDiv.classList.add("home-div");
   homePara.textContent = homeParaText
   aboutUsBtn.textContent = "About ➜";
+  aboutUsBtn.classList.add("btn");
 
   mainDiv.innerHTML = ""
   mainDiv.appendChild(homeTitle)
