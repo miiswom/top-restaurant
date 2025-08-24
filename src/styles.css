@@ -30,6 +30,7 @@ body {
   height: 100vh;
   font-size: 1.2em;
   color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   /* display: flex;
         flex-direction: column;
         min-height: 100vh; */
@@ -131,7 +132,7 @@ header {
   font-size: 1.5rem;
 }
 
-.btn-current {
+.active {
   max-width: 100%;
   padding: 40px 10px;
   border: none;
@@ -162,7 +163,6 @@ header {
   /* border: 1px solid blue; */
   font-size: 1.3em;
   line-height: 1.3em;
-  color: lime;
 }
 
 .aboutus-div {
