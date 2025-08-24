@@ -4,6 +4,6 @@ export function styleActiveElement(elements) {
     element.addEventListener("click", () => {
       document.querySelector(".active")?.classList.remove("active");
       element.classList.add("active");
-  });
+    });
   });
 }

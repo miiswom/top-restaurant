@@ -16,7 +16,7 @@ function loadMenuPage() {
 
   if (menuDiv.children.length === 0) {
     loadMealItems()
-  }
+  };
 };
 
 export { menuBtn, menuDiv, loadMenuPage }

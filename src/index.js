@@ -2,13 +2,12 @@
 
 import "./reset.css";
 import "./styles.css";
-
-export const mainDiv = document.querySelector("#content");
-export const buttons = document.querySelectorAll("button");
 import { homeBtn, loadHomePage } from "./home.js";
 import { menuBtn, loadMenuPage } from "./menu.js";
 import { contactBtn, loadContactPage } from "./contact.js";
 import { styleActiveElement } from "./styleActiveElement.js";
+export const mainDiv = document.querySelector("#content");
+export const buttons = document.querySelectorAll("button");
 
 
 homeBtn.addEventListener("click", () => {
